@@ -1,0 +1,4 @@
+<app-card [name]="data.name" (emitButton)="msg('[button]',$event)">
+    <app-debt [debts]="data.debts" (emitStatusCheckBox)="msg('[debt]',$event)"></app-debt>
+    <app-checkbox [info]="'Accept Conditions'" (emitStatusCheckBox)="msg('[checkbox]',$event)"></app-checkbox>
+</app-card>

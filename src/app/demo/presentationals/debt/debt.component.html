@@ -1,0 +1,8 @@
+<div *ngFor="let debt of debts" class="debt">
+    <div class="debt __item pt-4">
+        <div class="d-flex">
+            <app-checkbox [info]="debt.name" (emitStatusCheckBox)="reEmiter($event)"></app-checkbox>
+        </div>
+        <p class="mr-4">$ {{debt.debt}}</p>
+    </div>
+</div>
